@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+* {
+  -webkit-box-sizing: border-;
+          box-sizing: border-;
+}
+
+body {
+  background: #92bde7;
+  color: #485e74;
+  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1em;
+}
+
+@font-face {
+  font-family: fantasy;
+  src: url("fonts/Roboto-Regular.ttf");
+}
+
+.container {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+
+.container .brand {
+  text-align: center;
+}
+
+.container .brand span {
+  color: #fff;
+}
+
+.container .wrapper {
+  -webkit-box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+          box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+
+.container .wrapper > * {
+  padding: 1em;
+}
+
+.container .company-info {
+  background: #c9e6ff;
+}
+
+.container .company-info h3,
+.container .company-info ul {
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+
+.container .company-info i {
+  font-size: 18px;
+}
+
+.container .content {
+  background: #f9feff;
+}
+
+.container .content form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.container .content form label {
+  display: block;
+}
+
+.container .content form p {
+  margin: 0;
+}
+
+.container .content form .full {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
+}
+
+.container .content form input,
+.container .content form textarea,
+.container .content form button {
+  width: 98%;
+  padding: 1em;
+  border: 1px solid #c9e6ff;
+}
+
+.container .content form button {
+  margin-top: 1.3rem;
+  width: 200%;
+  background: #c9e6ff;
+  border: 0;
+  text-transform: uppercase;
+  padding: 1em;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container .content form button:hover {
+  background: #92bde7;
+  color: #fff;
+  outline: 0;
+  -webkit-transition: background-color 1s ease-in-out;
+  transition: background-color 1s ease-in-out;
+}
+
+.container ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*###########################################################*/
+@media (min-width: 700px) {
+  .wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+  }
+  .wrapper > * {
+    padding: 2em;
+  }
+  .company-info h3,
+  .company-info ul,
+  .company-info .brand {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=style.css.map */
